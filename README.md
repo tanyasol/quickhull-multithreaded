@@ -75,8 +75,6 @@ g++ -std=c++17 -pthread -O2 \
     -o quickhull
 ```
 Запуск:
-
-
-```
-```bash`
+```bash
 ./quickhull          
+```
