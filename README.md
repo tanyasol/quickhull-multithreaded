@@ -51,4 +51,28 @@
 Проверить компилятор:
 
 ```bash
+
 g++ --version     # версия должна быть 9.0 или новее
+
+Клонировать репозиторий:
+```bash
+git clone https://github.com/tanyasol/quickhull-multithreaded.git
+cd quickhull-parallel
+
+Компиляция проекта:
+```bash
+g++ -std=c++17 -pthread -O2 \
+    src/Point.cpp \
+    src/Error.cpp \
+    src/QuickHullSolver.cpp \
+    src/QuickHullSequential.cpp \
+    src/QuickHullParallel.cpp \
+    src/ThreadPool.cpp \
+    src/Validator.cpp \
+    src/Presenter.cpp \
+    src/main.cpp \
+    -Iinclude \
+    -o quickhull
+Запуск:
+```bash
+./quickhull          
